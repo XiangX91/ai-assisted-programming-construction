@@ -124,6 +124,39 @@ INSTRUCTIONS & STEPS
 OUTPUT FORMAT
 Please provide the final output as a single, complete Python code block with comments explaining each major step. 
 ```
+To deepen the data story, it would be beneficial to move from what is happening to precisely where by demonstrating a geographical map to indicate the geolocation of the incidents. A prompt is designed to generate the necessary Python code for this advanced visualisation.
+
+**Prompt 5: Generating a Geospatial Visualisation**
+```markdown
+PERSONA / ROLE
+You are an expert Python data scientist specialising in geospatial analysis and data visualisation. Your primary tools are pandas for data manipulation and folium for creating interactive maps. Your code must be clean, well-commented, and produce a high-quality, shareable HTML map.
+
+CONTEXT & OBJECTIVE
+Following our previous analysis of the nyc_construction_incidents.csv dataset, we have identified that Manhattan is the primary hotspot for safety incidents, and 'Worker Fell' is the most frequent incident type within that borough. The objective is to create a new visualisation: a map of Manhattan that plots the precise location of each 'Worker Fell' incident. This will provide a powerful geographical context to our data story.
+
+INSTRUCTIONS & STEPS
+Please generate a complete Python script that performs the following actions:
+1. **Load and Prepare Data:**
+      *   Import the necessary libraries (pandas, folium).
+      *   Load the nyc_construction_incidents.csv file into a pandas DataFrame.
+      *   Filter the DataFrame to include only incidents that occurred in 'Manhattan' and where the 'Incident_Type' is 'Worker Fell'.
+
+2. **Clean Geospatial Data:**
+      *   The 'Latitude' and 'Longitude' columns may contain non-numeric values or be missing. Convert these columns to numeric types, coercing any errors.
+      *   Remove any rows from the filtered DataFrame that have missing latitude or longitude values to ensure the map can be plotted correctly.
+
+3. **Create the Map Visualisation:**
+      *   Initialise a folium map centred on Manhattan (approximate coordinates: latitude 40.7831, longitude -73.9712) with an appropriate initial zoom level (e.g., 12).
+      *   Iterate through each row of the cleaned, filtered DataFrame.
+      *   For each incident, add a folium.CircleMarker to the map at its latitude and longitude coordinates.
+      *   Configure the markers to be visually distinct (e.g., red color, small radius) and include a popup that displays the Incident Date for added context when a user clicks on a point.
+4. **Save the Output:**
+      *   Save the generated map to an HTML file named manhattan_worker_fall_map.html.
+      *   Include a print statement to confirm that the map has been successfully saved.
+
+OUTPUT FORMAT
+Please provide the final output as a single, complete Python code block with comments explaining each major step of the process.
+```
 The generated script is available in the /scripts directory of this repository.
 
 #### Step 5: Adopting a "Trust but Verify" Mindset
