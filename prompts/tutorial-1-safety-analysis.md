@@ -40,10 +40,22 @@ OUTPUT FORMAT
 Provide the response in a clear, sectioned format. Use bullet points for lists.
 ```
 
-## Step 2: Generating Visual Insights
+### Step 2: Generating Visual Insights
 
 Now that we understand our data, we need to find the "Conflict" in our story. Where is the problem? We will ask our AI assistant to create visualizations to expose patterns and identify hotspots. This is an iterative process.
 
-### >> Prompt 2: Identify Geographical Hotspots
+#### >> Prompt 2: Identify Geographical Hotspots
 
 This prompt asks the AI to create the first key visual for our story.
+
+```markdown
+CONTEXT & OBJECTIVE
+Based on the nyc_construction_incidents.csv data we've already loaded, I need to identify if certain geographical areas have more incidents than others. This will be the first key visual for my report.
+
+INSTRUCTIONS & STEPS
+1. Calculate the total number of incidents for each borough.
+2. Generate a bar chart that displays the total number of incidents per borough.
+3. Ensure the bar chart is clearly labelled, with a title like "Total Construction Incidents by NYC Borough".
+4. Sort the bars in descending order to easily identify the borough with the most incidents.
+```
+
