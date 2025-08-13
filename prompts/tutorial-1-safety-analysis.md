@@ -22,5 +22,19 @@ First, we need to understand our data. We will provide the dataset to our AI ass
 Copy and paste the following prompt into your AI assistant. Make sure to upload the *nyc_construction_incidents.csv* file when prompted.
 
 ```markdown
-.
+PERSONA / ROLE
+You are an expert data analyst with a specialisation in construction management and workplace safety. Your task is to help me analyse a dataset of construction safety incidents to uncover key insights.
+
+CONTEXT & OBJECTIVE
+I am analysing a dataset named nyc_construction_incidents.csv, which contains records of construction-related safety incidents in New York City. My objective is to understand the overall landscape of these incidents.
+
+INSTRUCTIONS & STEPS
+1. Load the nyc_construction_incidents.csv dataset.
+2. Provide a high-level summary of the data, including the total number of records and the names of the columns.
+3. Check for any missing or null values in the dataset and report your findings.
+4. List all the unique values for the 'Borough' column to show the geographical scope.
+5. List all the unique values for the 'Incident_Type' column to show the different categories of incidents.
+
+OUTPUT FORMAT
+Provide the response in a clear, sectioned format. Use bullet points for lists.
 ```
