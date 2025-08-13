@@ -58,4 +58,18 @@ INSTRUCTIONS & STEPS
 3. Ensure the bar chart is clearly labelled, with a title like "Total Construction Incidents by NYC Borough".
 4. Sort the bars in descending order to easily identify the borough with the most incidents.
 ```
+#### >> Prompt 3: Drill Down into the Problem Area
 
+The first chart will likely show that one borough has significantly more incidents. Now, we drill down to understand what kind of incidents are happening there. This follow-up prompt builds on the previous result.
+
+```markdown
+CONTEXT & OBJECTIVE
+The previous bar chart showed that [Manually enter the name of the borough with the most incidents here, e.g., Manhattan] has the highest number of incidents. Now, I need to understand the types of incidents that are most common in that specific borough.
+
+INSTRUCTIONS & STEPS
+1. Filter the dataset to include only the incidents that occurred in [Manually enter the same borough name again].
+2. From this filtered data, calculate the frequency of each 'Incident_Type'.
+3. Generate a pie chart to show the distribution of incident types for that borough.
+
+Make sure the pie chart includes percentage labels for each slice and has a clear title, such as "Distribution of Incident Types in".
+```
