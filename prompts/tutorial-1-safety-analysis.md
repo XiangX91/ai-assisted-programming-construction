@@ -15,11 +15,13 @@ Instead of presenting a dense spreadsheet, your goal is to create a compelling d
 
 We will use the "And, But, Therefore" narrative framework to structure our story.
 
-### Step 1: Data Exploration
+### Understand the data
+
+#### Step 1: Data Exploration
 
 First, we need to understand our data. We will provide the dataset to our AI assistant and ask it to perform an initial exploration. This step establishes the "Setup" of our story by defining the scope of our data.
 
-#### >> Prompt 1: Initial Data Analysis
+**Prompt 1: Initial Data Analysis**
 Copy and paste the following prompt into your AI assistant. Make sure to upload the *nyc_construction_incidents.csv* file when prompted.
 
 ```markdown
@@ -40,11 +42,11 @@ OUTPUT FORMAT
 Provide the response in a clear, sectioned format. Use bullet points for lists.
 ```
 
-### Step 2: Generating Visual Insights
+#### Step 2: Generating Visual Insights
 
 Now that we understand our data, we need to find the "Conflict" in our story. Where is the problem? We will ask our AI assistant to create visualizations to expose patterns and identify hotspots. This is an iterative process.
 
-#### >> Prompt 2: Identify Geographical Hotspots
+**Prompt 2: Identify Geographical Hotspots**
 
 This prompt asks the AI to create the first key visual for our story.
 
@@ -58,7 +60,7 @@ INSTRUCTIONS & STEPS
 3. Ensure the bar chart is clearly labelled, with a title like "Total Construction Incidents by NYC Borough".
 4. Sort the bars in descending order to easily identify the borough with the most incidents.
 ```
-#### >> Prompt 3: Drill Down into the Problem Area
+**Prompt 3: Drill Down into the Problem Area**
 
 The first chart will likely show that one borough has significantly more incidents. Now, we drill down to understand what kind of incidents are happening there. This follow-up prompt builds on the previous result.
 
