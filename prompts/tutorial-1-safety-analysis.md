@@ -127,3 +127,4 @@ Please generate a complete Python script that performs the following actions in 
 OUTPUT FORMAT
 Provide the final output as a single, complete Python code block. Add comments within the code to explain each major step.
 ```
+The generated script is available in the /scripts directory of this repository
