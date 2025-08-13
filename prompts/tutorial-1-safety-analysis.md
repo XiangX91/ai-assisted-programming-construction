@@ -15,10 +15,11 @@ Instead of presenting a dense spreadsheet, your goal is to create a compelling d
 
 We will use the "And, But, Therefore" narrative framework to structure our story.
 
-### Step 1: Data Exploration (The Setup)
+### Step 1: Data Exploration
+
 First, we need to understand our data. We will provide the dataset to our AI assistant and ask it to perform an initial exploration. This step establishes the "Setup" of our story by defining the scope of our data.
 
-#### Prompt 1: Initial Data Analysis
+#### >> Prompt 1: Initial Data Analysis
 Copy and paste the following prompt into your AI assistant. Make sure to upload the *nyc_construction_incidents.csv* file when prompted.
 
 ```markdown
@@ -38,3 +39,11 @@ INSTRUCTIONS & STEPS
 OUTPUT FORMAT
 Provide the response in a clear, sectioned format. Use bullet points for lists.
 ```
+
+## Step 2: Generating Visual Insights
+
+Now that we understand our data, we need to find the "Conflict" in our story. Where is the problem? We will ask our AI assistant to create visualizations to expose patterns and identify hotspots. This is an iterative process.
+
+### >> Prompt 2: Identify Geographical Hotspots
+
+This prompt asks the AI to create the first key visual for our story.
