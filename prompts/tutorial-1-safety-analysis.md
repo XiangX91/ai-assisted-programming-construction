@@ -15,7 +15,7 @@ Instead of presenting a dense spreadsheet, your goal is to create a compelling d
 
 We will use the "And, But, Therefore" narrative framework to structure our story.
 
-### Understand the Data
+### Understand the Data and Design the Narrative
 
 #### Step 1: Data Exploration
 
@@ -89,3 +89,41 @@ With our AI-generated visuals, we can now construct a compelling story that lead
     *   *(This is the actionable recommendation derived from the story)*
 
 This narrative, supported by the AI-generated visuals, transforms a simple data analysis into a powerful tool for driving strategic decisions in construction safety management.
+
+#### Step 4: Visualise according to the refined narrative
+
+To bring your tutorial to life, you'll need a Python script that can perform the analysis and create the visualisations we've discussed. Below is a complete, well-documented Python script designed to be run in an environment like a Jupyter Notebook. 
+
+**Prompt 4: Python generation**
+Here is a well-structured prompt you can use to ask an AI assistant to generate the script above. This demonstrates the "context engineering" we discussed, providing the AI with a clear role, objective, and detailed instructions to get a high-quality result.
+
+
+```markdown
+PERSONA / ROLE
+You are an expert Python data scientist specialising in data visualisation using the pandas, matplotlib, and seaborn libraries. Your code should be clean, well-commented, and easy for a non-expert to understand.
+
+CONTEXT & OBJECTIVE
+I am working with a dataset named nyc_construction_incidents.csv. This dataset contains information about construction safety incidents in New York City, including columns for 'Borough' and 'Incident_Type'. My objective is to create a Python script that generates two visualisations to identify and analyse safety hotspots.
+
+INSTRUCTIONS & STEPS
+Please generate a complete Python script that performs the following actions in sequence:
+1. Load Data: Import the necessary libraries (pandas, matplotlib.pyplot, seaborn) and load the nyc_construction_incidents.csv file into a pandas DataFrame. Include basic error handling for a FileNotFoundError.
+2. Create First Visualisation (Borough Hotspots):
+* Calculate the total number of incidents for each of the five boroughs.
+* Generate a bar chart showing these totals.
+* The chart should have a clear title: "Total Construction Incidents by NYC Borough".
+* Label the X and Y axes appropriately.
+* Add the numerical count on top of each bar for clarity.
+* Use a professional colour palette (e.g., "viridis").
+3. Create Second Visualisation (Incident Type Breakdown):
+* First, identify the top 5 most frequent 'Incident_Type' values from the entire dataset.
+* Create a new DataFrame that is filtered only to include rows with these top 5 incident types.
+* Generate a stacked bar chart where each bar represents a borough.
+* Each bar should be segmented by the count of the top 5 incident types.
+* The chart should have a clear title: "Breakdown of Top 5 Incident Types by NYC Borough".
+* Ensure the legend is clear and placed appropriately.
+4. Please make sure to call plt.show() after each plot is generated so they display separately. Use plt.tight_layout() to ensure labels do not overlap.
+
+OUTPUT FORMAT
+Provide the final output as a single, complete Python code block. Add comments within the code to explain each major step.
+```
