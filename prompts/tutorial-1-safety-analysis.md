@@ -8,6 +8,8 @@ Any conversational AI assistant capable of data analysis (e.g., ChatGPT, Gemini,
 ## Dataset: 
 *nyc_construction_incidents.csv* (Available in the /data directory of this repository), from https://catalog.data.gov/dataset/construction-related-incidents
 
+This dataset includes construction-related incidents recorded through the US Department of Buildings (DOB) Incident Database. Updated on August 11, 2025.
+
 ## The Human-AI-Code Triad in Action: 
 Before we begin, let's revisit a key concept: the Human-AI-Code Triad. This tutorial is a perfect example of this collaborative partnership:
 * **Human (You):** As the domain expert (a construction safety manager), you define the problem, provide the necessary context, and critically evaluate the results. Your role is strategic.   
