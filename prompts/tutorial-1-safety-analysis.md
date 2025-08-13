@@ -6,7 +6,7 @@ This tutorial will walk you through the process of using an AI assistant to anal
 Any conversational AI assistant capable of data analysis (e.g., ChatGPT, Gemini, Julius AI).
 
 ## Dataset: 
-*nyc_construction_incidents.csv* (Available in the /data directory of this repository).
+*nyc_construction_incidents.csv* (Available in the /data directory of this repository), from https://catalog.data.gov/dataset/construction-related-incidents
 
 ## Scenario and Context:
 Imagine you are the Health and Safety Manager for a large construction firm with multiple high-rise projects across New York City. Leadership has noticed a recent uptick in safety incidents and has tasked you with preparing a report for the quarterly review.
