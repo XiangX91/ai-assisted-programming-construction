@@ -6,7 +6,7 @@ This tutorial will walk you through the process of using an AI assistant to anal
 Any conversational AI assistant capable of data analysis (e.g., ChatGPT, Gemini, Julius AI).
 
 ## Dataset: 
-nyc_construction_incidents.csv (Available in the /data directory of this repository).
+*nyc_construction_incidents.csv* (Available in the /data directory of this repository).
 
 ## Scenario and Context:
 Imagine you are the Health and Safety Manager for a large construction firm with multiple high-rise projects across New York City. Leadership has noticed a recent uptick in safety incidents and has tasked you with preparing a report for the quarterly review.
@@ -19,7 +19,7 @@ We will use the "And, But, Therefore" narrative framework to structure our story
 First, we need to understand our data. We will provide the dataset to our AI assistant and ask it to perform an initial exploration. This step establishes the "Setup" of our story by defining the scope of our data.
 
 #### Prompt 1: Initial Data Analysis
-Copy and paste the following prompt into your AI assistant. Make sure to upload the nyc_construction_incidents.csv file when prompted.
+Copy and paste the following prompt into your AI assistant. Make sure to upload the *nyc_construction_incidents.csv* file when prompted.
 
 ```markdown
 .
