@@ -6,6 +6,7 @@ To run the analysis and visualisations on your local machine, you will need to h
 * Clone the Repository
 ```bash
 git clone https://github.com/XiangX91/ai-assisted-programming-construction.git
+```
 
 * Create and Activate the Conda Environment
 
@@ -13,3 +14,11 @@ This repository includes an `environment.yml` file that contains all the necessa
 
 ```bash
 conda env create -f environment.yml
+```
+This command will create a new Conda environment named construction-viz and install all the required packages.
+
+Once the environment is created, activate it:
+
+```bash
+conda activate construction-viz
+```
