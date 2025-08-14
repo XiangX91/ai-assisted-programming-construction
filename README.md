@@ -36,6 +36,11 @@ python scripts/Tutorial_1/safety_hotspot_analysis.py #Please change the .py you 
 
 * Run the Jupyter Notebook
 
+You will need to run the following command to create a kernel spec file that tells Jupyter about your environment. This makes the kernel available to your user account.
+```bash
+python -m ipykernel install --user --name "construction-viz" --display-name "Python (Construction Viz)"
+```
+
 ```bash
 jupyter notebook
 ```
