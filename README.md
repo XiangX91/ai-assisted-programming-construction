@@ -34,8 +34,13 @@ To run the main analysis script:
 python scripts/Tutorial_1/safety_hotspot_analysis.py #Please change the .py you would like to run
 ```
 
-* Deactivate the Conda Environment
+* Deactivate and Configure the Conda Environment
 
+Deactivate: 
 ```bash
-conda deactivate construction-viz
+conda deactivate
+```
+Viewing a list of your environments:
+```bash
+conda info --envs
 ```
