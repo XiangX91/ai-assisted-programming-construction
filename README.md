@@ -26,10 +26,16 @@ You will now be in the project's dedicated Python environment, and your terminal
 
 * Run the Python Scripts
 
-With the environment activated, you can now run the Python scripts from the /scripts directory to generate the visualisations.
+With the environment activated, you can now run the Python scripts from the /scripts directory to conduct the analysis and generate the visualisations.
 
 To run the main analysis script:
 
 ```bash
-python scripts/Tutorial_1/safety_hotspot_analysis.py
+python scripts/Tutorial_1/safety_hotspot_analysis.py #Please change the .py you would like to run
+```
+
+* Deactivate the Conda Environment
+
+```bash
+conda deactivate construction-viz
 ```
