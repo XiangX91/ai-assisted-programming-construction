@@ -6,7 +6,7 @@ This tutorial puts the principles of this chapter into practice. We will walk th
 Any conversational AI assistant capable of data analysis (e.g., ChatGPT, Gemini, Julius AI).
 
 ## Dataset: 
-*nyc_construction_incidents.csv* (Available in the /data directory of this repository), from https://catalog.data.gov/dataset/construction-related-incidents
+*Construction-Related_Incidents.csv* (Available in the /data directory of this repository), from https://catalog.data.gov/dataset/construction-related-incidents
 
 This dataset includes construction-related incidents recorded through the US Department of Buildings (DOB) Incident Database. Updated on August 11, 2025.
 
@@ -30,17 +30,17 @@ We will follow the Construction Data Analysis Workflow and the "And, But, Theref
 First, we need to understand our data. We will provide the dataset to our AI assistant and ask it to perform an initial exploration. This step establishes the "Setup" of our story by defining the scope of our data.
 
 **Prompt 1: Data Integration and Exploration (The Setup)**
-Copy and paste the following prompt into your AI assistant. Make sure to upload the *nyc_construction_incidents.csv* file when prompted.
+Copy and paste the following prompt into your AI assistant. Make sure to upload the *Construction-Related_Incidents.csv* file when prompted.
 
 ```markdown
 PERSONA / ROLE
 You are an expert data analyst with a specialisation in construction management and workplace safety. Your task is to help me analyse a dataset of construction safety incidents to uncover key insights.
 
 CONTEXT & OBJECTIVE
-I am analysing a dataset named nyc_construction_incidents.csv, which contains records of construction-related safety incidents in New York City. My objective is to understand the overall landscape of these incidents.
+I am analysing a dataset named Construction-Related_Incidents.csv, which contains records of construction-related safety incidents in New York City. My objective is to understand the overall landscape of these incidents.
 
 INSTRUCTIONS & STEPS
-1. Load the nyc_construction_incidents.csv dataset.
+1. Load the Construction-Related_Incidents.csv dataset.
 2. Provide a high-level summary of the data, including the total number of records and the names of the columns.
 3. Check for any missing or null values in the dataset and report your findings.
 4. List all the unique values for the 'Borough' column to show the geographical scope.
@@ -60,7 +60,7 @@ This prompt asks the AI to create the first key visual for our story.
 
 ```markdown
 CONTEXT & OBJECTIVE
-Based on the nyc_construction_incidents.csv data we've already loaded, I need to identify if some geographical regions have more incidents than others. This will be the first key visual for my report.
+Based on the Construction-Related_Incidents.csv data we've already loaded, I need to identify if some geographical regions have more incidents than others. This will be the first key visual for my report.
 
 INSTRUCTIONS & STEPS
 1. Calculate the total number of incidents for each borough.
@@ -108,10 +108,10 @@ PERSONA / ROLE
 You are an expert Python data scientist specialising in data visualisation using the pandas, matplotlib, and seaborn libraries. Your code must be clean, well-commented, and easy for a non-expert to understand.
 
 CONTEXT & OBJECTIVE
-Using the `nyc_construction_incidents.csv` dataset, I need a Python script that generates two key visualisations for my safety report: one showing incident hotspots by borough, and another breaking down the incident types within those hotspots.
+Using the `Construction-Related_Incidents.csv` dataset in the /data directory of this repository, I need a Python script that generates two key visualisations for my safety report: one showing incident hotspots by borough, and another breaking down the incident types within those hotspots.
 
 INSTRUCTIONS & STEPS
-1.  **Load Data:** Import necessary libraries and load `nyc_construction_incidents.csv`. Include error handling for a `FileNotFoundError`.
+1.  **Load Data:** Import necessary libraries and load `Construction-Related_Incidents.csv`. Include error handling for a `FileNotFoundError`.
 2.  **First Visualisation (Borough Hotspots):**
       *   Generate a bar chart showing the total number of incidents per borough, sorted in descending order.
       *   Include a clear title, axis labels, and numerical counts on top of each bar.
@@ -126,19 +126,19 @@ Please provide the final output as a single, complete Python code block with com
 ```
 To deepen the data story, it would be beneficial to move from what is happening to precisely where by demonstrating a geographical map to indicate the geolocation of the incidents. A prompt is designed to generate the necessary Python code for this advanced visualisation.
 
-**Prompt 5: Generating a Geospatial Visualisation**
+**Prompt 5: Code for Generating a Geospatial Visualisation**
 ```markdown
 PERSONA / ROLE
 You are an expert Python data scientist specialising in geospatial analysis and data visualisation. Your primary tools are pandas for data manipulation and folium for creating interactive maps. Your code must be clean, well-commented, and produce a high-quality, shareable HTML map.
 
 CONTEXT & OBJECTIVE
-Following our previous analysis of the nyc_construction_incidents.csv dataset, we have identified that Manhattan is the primary hotspot for safety incidents, and 'Worker Fell' is the most frequent incident type within that borough. The objective is to create a new visualisation: a map of Manhattan that plots the precise location of each 'Worker Fell' incident. This will provide a powerful geographical context to our data story.
+Following our previous analysis of the Construction-Related_Incidents.csv dataset in the /data directory of this repository, we have identified that Manhattan is the primary hotspot for safety incidents, and 'Worker Fell' is the most frequent incident type within that borough. The objective is to create a new visualisation: a map of Manhattan that plots the precise location of each 'Worker Fell' incident. This will provide a powerful geographical context to our data story.
 
 INSTRUCTIONS & STEPS
 Please generate a complete Python script that performs the following actions:
 1. **Load and Prepare Data:**
       *   Import the necessary libraries (pandas, folium).
-      *   Load the nyc_construction_incidents.csv file into a pandas DataFrame.
+      *   Load the Construction-Related_Incidents.csv file into a pandas DataFrame.
       *   Filter the DataFrame to include only incidents that occurred in 'Manhattan' and where the 'Incident_Type' is 'Worker Fell'.
 
 2. **Clean Geospatial Data:**
@@ -164,7 +164,7 @@ As emphasised throughout this chapter, the most significant risk in AI-assisted 
 
 Before using this script in a real report, apply a simple validation framework:
 1. **Manual Code Review:** Read through the script. Does it make sense? Is it selecting the correct columns (Borough, Incident_Type)? This first-pass review can catch obvious errors.
-2. **Cross-Verification:** Manually filter the *nyc_construction_incidents.csv* file in a spreadsheet program. Does the total count for Manhattan match the number on the AI-generated chart? Verifying one or two key data points provides confidence in the overall logic.
+2. **Cross-Verification:** Manually filter the *Construction-Related_Incidents.csv* file in a spreadsheet program. Does the total count for Manhattan match the number on the AI-generated chart? Verifying one or two key data points provides confidence in the overall logic.
 3. **Incremental Execution:** Run the code in a Jupyter Notebook (available in the /notebooks directory) cell by cell. After the data is loaded, display the first few rows to ensure it's correct. After the counts are calculated, print the results to check them before plotting. This helps isolate where a potential error might occur.
 
 By adopting this mindset, you leverage the speed of AI while maintaining the critical oversight and professional responsibility required in the construction industry.   
