@@ -126,13 +126,13 @@ Please provide the final output as a single, complete Python code block with com
 ```
 To deepen the data story, it would be beneficial to move from what is happening to precisely where by demonstrating a geographical map to indicate the geolocation of the incidents. A prompt is designed to generate the necessary Python code for this advanced visualisation.
 
-**Prompt 5: Generating a Geospatial Visualisation**
+**Prompt 5: Code for Generating a Geospatial Visualisation**
 ```markdown
 PERSONA / ROLE
 You are an expert Python data scientist specialising in geospatial analysis and data visualisation. Your primary tools are pandas for data manipulation and folium for creating interactive maps. Your code must be clean, well-commented, and produce a high-quality, shareable HTML map.
 
 CONTEXT & OBJECTIVE
-Following our previous analysis of the Construction-Related_Incidents.csv dataset, we have identified that Manhattan is the primary hotspot for safety incidents, and 'Worker Fell' is the most frequent incident type within that borough. The objective is to create a new visualisation: a map of Manhattan that plots the precise location of each 'Worker Fell' incident. This will provide a powerful geographical context to our data story.
+Following our previous analysis of the Construction-Related_Incidents.csv dataset in the /data directory of this repository, we have identified that Manhattan is the primary hotspot for safety incidents, and 'Worker Fell' is the most frequent incident type within that borough. The objective is to create a new visualisation: a map of Manhattan that plots the precise location of each 'Worker Fell' incident. This will provide a powerful geographical context to our data story.
 
 INSTRUCTIONS & STEPS
 Please generate a complete Python script that performs the following actions:
